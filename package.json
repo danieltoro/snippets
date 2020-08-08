@@ -1,0 +1,262 @@
+{
+  "name": "danieltoro-snippets",
+  "displayName": "Snippets extension for Javascript and Typescript",
+  "description": "Simple extensions for React, Redux and Graphql in JS/TS with ES7 syntax",
+  "version": "1.0.0",
+  "publisher": "danieltoro",
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "typescript": "3.9.6",
+    "@types/vscode": "^1.45.0",
+    "@types/node": "^14.0.14"
+  },
+  "keywords": [
+    "snippets",
+    "react",
+    "redux",
+    "react-native",
+    "javascript",
+    "typescript",
+    "graphql"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "main": "./lib/index.js",
+  "activationEvents": [
+    "onCommand:extension.snippetSearch"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.snippetSearch",
+        "title": "Snippet Search"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.snippetSearch",
+        "key": "ctrl+alt+r",
+        "mac": "shift+cmd+r",
+        "when": "editorTextFocus"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/js-ts/basics-es7.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/js-ts/basics-es7.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/js-ts/basics-es7.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/js-ts/basics-es7.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/js-ts/basics-ts.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/js-ts/basics-ts.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/js-ts/console.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/js-ts/console.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/js-ts/console.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/js-ts/console.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react/basics.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react/basics.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react/basics.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react/basics.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react/lifecycle-methods.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react/lifecycle-methods.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react/lifecycle-methods.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react/lifecycle-methods.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react/react-hooks.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react/react-hooks.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react/react-hooks.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react/react-hooks.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react/react-components.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react/react-components.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react/react-components.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react/react-components.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react/react-components-ts.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react/react-components-ts.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react/hoc.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react/hoc.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react/hoc.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react/hoc.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react-native/react-native.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react-native/react-native.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react-native/react-native.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react-native/react-native.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react-native/react-native-ts.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react-native/react-native-ts.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/redux/redux-snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/redux/redux-snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/redux/redux-snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/redux/redux-snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/graphql/graphql-snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/graphql/graphql-snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/graphql/graphql-snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/graphql/graphql-snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/test/test-snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/test/test-snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/test/test-snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/test/test-snippets.json"
+      }
+    ]
+  }
+}

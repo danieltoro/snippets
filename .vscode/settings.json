@@ -1,0 +1,11 @@
+{
+  "files.exclude": {
+    "lib": false
+  },
+  "search.exclude": {
+    "lib": true
+  },
+  "typescript.tsc.autoDetect": "off",
+  "prettier.semi": false,
+  "prettier.singleQuote": true
+}

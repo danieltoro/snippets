@@ -1,0 +1,52 @@
+{
+  "componentWillMount": {
+    "prefix": "cwm",
+    "body": ["componentWillMount() {", "\t$0", "}", ""],
+    "description": "DEPRECATED!!!. Invoked once, both on the client and server, immediately before the initial rendering occurs"
+  },
+  "componentDidMount": {
+    "prefix": "cdm",
+    "body": ["componentDidMount() {", "\t$0", "}", ""],
+    "description": "Invoked once, only on the client (not on the server), immediately after the initial rendering occurs."
+  },
+  "componentWillReceiveProps": {
+    "prefix": "cwr",
+    "body": ["componentWillReceiveProps(nextProps) {", "\t$0", "}", ""],
+    "description": "DEPRECATED!!!. Invoked when a component is receiving new props. This method is not called for the initial render."
+  },
+  "shouldComponentUpdate": {
+    "prefix": "scu",
+    "body": ["shouldComponentUpdate(nextProps, nextState) {", "\t$0", "}", ""],
+    "description": "Invoked before rendering when new props or state are being received. "
+  },
+  "componentWillUpdate": {
+    "prefix": "cwup",
+    "body": ["componentWillUpdate(nextProps, nextState) {", "\t$0", "}", ""],
+    "description": "DEPRECATED!!!. Invoked immediately before rendering when new props or state are being received."
+  },
+  "componentDidUpdate": {
+    "prefix": "cdup",
+    "body": ["componentDidUpdate(prevProps, prevState) {", "\t$0", "}", ""],
+    "description": "Invoked immediately after the component's updates are flushed to the DOM."
+  },
+  "componentWillUnmount": {
+    "prefix": "cwun",
+    "body": ["componentWillUnmount() {", "\t$0", "}", ""],
+    "description": "Invoked immediately before a component is unmounted from the DOM."
+  },
+  "getDerivedStateFromProps": {
+    "prefix": "gdsfp",
+    "body": ["static getDerivedStateFromProps(props, state) {", "\t${1}", "}"],
+    "description": "Invoked right before calling the render method, both on the initial mount and on subsequent updates."
+  },
+  "getSnapshotBeforeUpdate": {
+    "prefix": "gsbu",
+    "body": [
+      "getSnapshotBeforeUpdate = (prevProps, prevState) => {",
+      "\t$0",
+      "}",
+      ""
+    ],
+    "description": "Called right before mutations are made (e.g. before the DOM is updated)"
+  }
+}
