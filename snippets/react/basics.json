@@ -1,0 +1,167 @@
+{
+  "import React": {
+    "prefix": "imr",
+    "body": ["import React from 'react'", ""]
+  },
+  "import ReactDOM": {
+    "prefix": "imrd",
+    "body": ["import ReactDOM from 'react-dom'", ""]
+  },
+  "import React, { Component }": {
+    "prefix": "imrc",
+    "body": ["import React, { Component } from 'react'", ""]
+  },
+  "import React, { Component } & PropTypes": {
+    "prefix": "imrcp",
+    "body": [
+      "import React, { Component } from 'react'",
+      "import PropTypes from 'prop-types'",
+      ""
+    ]
+  },
+  "import React, { PureComponent }": {
+    "prefix": "imrpc",
+    "body": ["import React, { PureComponent } from 'react'", ""]
+  },
+  "import React, { PureComponent } & PropTypes": {
+    "prefix": "imrpcp",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "import PropTypes from 'prop-types'",
+      ""
+    ]
+  },
+  "import React, { memo }": {
+    "prefix": "imrm",
+    "body": ["import React, { memo } from 'react'", ""]
+  },
+  "import React, { memo } & PropTypes": {
+    "prefix": "imrmp",
+    "body": [
+      "import React, { memo } from 'react'",
+      "import PropTypes from 'prop-types'",
+      ""
+    ]
+  },
+  "import React, {useState}": {
+    "prefix": "imrs",
+    "body": ["import React, { useState } from 'react'", ""]
+  },
+  "import React, {useState, useEffect}": {
+    "prefix": "imrse",
+    "body": ["import React, { useState, useEffect } from 'react'", ""]
+  },
+  "import PropTypes": {
+    "prefix": "impt",
+    "body": ["import PropTypes from 'prop-types'", ""]
+  },
+  "import React Router": {
+    "prefix": "imrr",
+    "body": [
+      "import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'",
+      ""
+    ]
+  },
+  "import React Browser Router": {
+    "prefix": "imbr",
+    "body": ["import { BrowserRouter as Router } from 'react-router-dom'", ""]
+  },
+  "import React Browser Router - Route": {
+    "prefix": "imbrr",
+    "body": ["import { Route } from 'react-router-dom'", ""]
+  },
+  "import React Browser Router - Route Combo": {
+    "prefix": "imbrc",
+    "body": [
+      "import { Route, Switch, NavLink, Link } from 'react-router-dom'",
+      ""
+    ]
+  },
+  "import React Browser Router - Switch": {
+    "prefix": "imbrs",
+    "body": ["import { Switch } from 'react-router-dom'", ""]
+  },
+  "import React Browser Router - Link": {
+    "prefix": "imbrl",
+    "body": ["import { Link } from 'react-router-dom'", ""]
+  },
+  "import React Browser Router - NavLink": {
+    "prefix": "imbrnl",
+    "body": ["import { NavLink } from 'react-router-dom'", ""]
+  },
+  "import redux statement": {
+    "prefix": "redux",
+    "body": ["import { connect } from 'react-redux'", ""]
+  },
+  "classConstructor": {
+    "prefix": "rconst",
+    "body": [
+      "constructor(props) {",
+      "\tsuper(props)",
+      "",
+      "\tthis.state = {",
+      "\t\t $0",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "Adds a default constructor for it('', () => {})the class that contains props as arguments"
+  },
+  "emptyState": {
+    "prefix": "est",
+    "body": ["state = {", "\t$1", "}", ""],
+    "description": "Creates empty state object. To be used in a constructor."
+  },
+  "componentRender": {
+    "prefix": "ren",
+    "body": [
+      "render() {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}"
+    ],
+    "description": "Basic render."
+  },
+  "componentSetStateObject": {
+    "prefix": "sst",
+    "body": "this.setState({$0})",
+    "description": "Performs a shallow merge of nextState into current state"
+  },
+  "componentSetStateFunc": {
+    "prefix": "ssf",
+    "body": ["this.setState((state, props) => { return { $0 }})", ""],
+    "description": "Performs a shallow merge of nextState into current state"
+  },
+  "componentProps": {
+    "prefix": "props",
+    "body": "this.props.$0",
+    "description": "Access component's props"
+  },
+  "componentState": {
+    "prefix": "state",
+    "body": "this.state.$0"
+  },
+  "createContext": {
+    "prefix": "rcontext",
+    "body": ["const ${1:contextName} = React.createContext()", ""],
+    "description": "Create React context"
+  },
+  "createRef": {
+    "prefix": "cref",
+    "body": ["this.${1:refName}Ref = React.createRef()", ""],
+    "description": "Create ref statement used inside constructor"
+  },
+  "forwardRef": {
+    "prefix": "fref",
+    "body": ["const ref = React.createRef()", ""],
+    "description": "Forward ref statement used inside component"
+  },
+  "bindThis": {
+    "prefix": "bnd",
+    "body": "this.${1:methodName} = this.${1:methodName}.bind(this)$0",
+    "description": "Binds this to a method"
+  }
+}
